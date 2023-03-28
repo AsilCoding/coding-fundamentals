@@ -1,0 +1,39 @@
+.box{
+    background-color: gainsboro;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 250px;
+}
+/* https://www.w3schools.com/cssref/css3_pr_border-image.php#:~:text=The%20border%2Dimage%20property%20allows,border%2Dimage%2Dslice */
+#border-image{
+    border: 20px solid transparent;
+    padding: 15px;
+    border-image: url('border image.png') 90;
+}
+
+.avatr{
+    width: 100px;
+}
+.name{
+    width: fit-content;
+    position: relative;
+    margin-left: 130px;
+    margin-top: -65px;
+    font-size: 25px;
+}
+
+.stars{
+    width: 150px;
+}
+.starimg{
+    height: 30px;
+    position: relative;
+    margin-top: 30px;
+    padding-top: 15px ;
+    padding-bottom: 15px;
+}
+
+.review{
+    font-size: 17px;
+}
