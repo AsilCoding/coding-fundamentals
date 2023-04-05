@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Don't Contact</title>
+</head>
+<body>
+    <div class="navigation-bar">
+        <img src="../advanced css capstone/Color logo - no background.svg" style="width: 90px;">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <!-- https://stackoverflow.com/questions/16349490/html-css-buttons-that-scroll-down-to-different-div-sections-on-a-webpage -->
+        <div>
+        <button class="contact-button" onClick="document.getElementById('c-form').scrollIntoView();">Contact Form</button>
+        </div>
+    </div>
+    <header class="header">
+        <h1 style="font-family: Verdana, 'Trebuchet MS';">Get in Touch</h1>
+        <h3 style="font-family: Garamond, Georgia; line-height: 30px; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt maxime reiciendis accusantium, labore consequuntur harum ad quaerat neque repudiandae sapiente dolor minus enim nobis beatae odio nulla delectus esse cupiditate.</h3>
+    </header>
+    <div class="contact-bottom">
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>We at StarryAsh want to hear your thoughts! Send us a form to contact us! Or use the below options:</p>
+        <p style="margin-top: 40px; margin-bottom: 40px;">Phone Number: <span style="color: #2b3b4b;">+0100120</span> </p>
+        <p style="margin-bottom: 40px;">Email: <a href="" style="text-decoration: none; color: #2b3b4b;">StarryAsh@unemail.com</a></p>
+        <div class="social-links">
+        <a href="#" class="fa fa-google fa-2x"></a>
+        <a href="#" class="fa fa-facebook fa-2x"></a>
+        <a href="#" class="fa fa-instagram fa-2x"></a>
+        </div>
+    </div>
+    <div>
+        <form id="c-form">
+          <h2>Contact Form</h2>
+            <!-- First Name -->
+            <div>
+            <label for="first-name" aria-required="true"> First Name:</label>
+            <input name="first-name" type="text" placeholder="Joe"></input>
+          </div>
+          <!-- Last Name -->
+          <div>
+            <label for="last-name"> Last Name:</label>
+            <input name="last-name" type="text" placeholder="Smith"></input>
+          </div>
+          <!-- Email -->
+          <div>
+            <label for="email" aria-required="true"> Email:</label>
+            <input name="email" type="text" placeholder="smith@email.com"></input>
+          </div>
+          <!-- Phone -->
+          <div>
+            <label for="phone"> Phone No.:</label>
+            <input name="phone" type="text"></input>
+          </div>
+          <!-- Subject -->
+          <div style="display: flex; align-items: center;">
+            <label for="subject" aria-required="true"> Subject:</label>
+            <textarea name="subject" id="Subject" cols="50" rows="7"></textarea>
+          </div>
+          <!-- Reset and Submit Button -->
+          <div>
+            <button id="Reset" type="reset" class="contact-button">Reset</button>
+            <button type="submit" class="contact-button">Submit Survey</button>
+          </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
